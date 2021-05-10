@@ -39,5 +39,7 @@ namespace Contpaqi.Sql.Nominas.Empresa
         public bool importe4reportado { get; set; }
 
         public DateTime? timestamp { get; set; }
+
+        public bool valorReportado { get; set; }
     }
 }

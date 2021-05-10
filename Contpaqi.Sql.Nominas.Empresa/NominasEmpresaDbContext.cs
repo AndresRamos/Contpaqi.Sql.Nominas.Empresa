@@ -7,13 +7,7 @@ namespace Contpaqi.Sql.Nominas.Empresa
 {
     public class NominasEmpresaDbContext : DbContext
     {
-        static NominasEmpresaDbContext()
-        {
-            Database.SetInitializer(new NullDatabaseInitializer<NominasEmpresaDbContext>());
-        }
-
-        public NominasEmpresaDbContext()
-            : base("name=NominasEmpresaDbContext")
+        protected NominasEmpresaDbContext()
         {
         }
 
@@ -91,9 +85,14 @@ namespace Contpaqi.Sql.Nominas.Empresa
         public virtual DbSet<nom10049> nom10049 { get; set; }
         public virtual DbSet<nom10050> nom10050 { get; set; }
         public virtual DbSet<nom10051> nom10051 { get; set; }
+        public virtual DbSet<nom10052> nom10052 { get; set; }
+        public virtual DbSet<nom10053> nom10053 { get; set; }
+        public virtual DbSet<nom10054> nom10054 { get; set; }
+        public virtual DbSet<nom10055> nom10055 { get; set; }
         public virtual DbSet<nom10000> nom10000 { get; set; }
         public virtual DbSet<Nom1000x> Nom1000x { get; set; }
         public virtual DbSet<nom10047> nom10047 { get; set; }
+        public virtual DbSet<nom10056> nom10056 { get; set; }
         public virtual DbSet<nom100xx> nom100xx { get; set; }
         public virtual DbSet<nomsimul> nomsimul { get; set; }
 
@@ -855,6 +854,50 @@ namespace Contpaqi.Sql.Nominas.Empresa
 
             modelBuilder.Entity<nom10050>()
                 .Property(e => e.Nombre)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<nom10054>()
+                .Property(e => e.NRP)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<nom10054>()
+                .Property(e => e.NSS)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<nom10054>()
+                .Property(e => e.RFCTrabajador)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<nom10054>()
+                .Property(e => e.FolioAviso)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<nom10054>()
+                .Property(e => e.NumCredito)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<nom10054>()
+                .Property(e => e.TipoAviso)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<nom10054>()
+                .Property(e => e.NSSUnificado)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<nom10054>()
+                .Property(e => e.TipoCredito)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<nom10054>()
+                .Property(e => e.TipoDescuento)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<nom10054>()
+                .Property(e => e.EstatusCredito)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<nom10054>()
+                .Property(e => e.CURPTrabajador)
                 .IsUnicode(false);
 
             modelBuilder.Entity<nom10000>()

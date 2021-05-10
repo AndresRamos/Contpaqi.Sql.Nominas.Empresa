@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factories\NominasEmpresaDbContextFactory.cs" />
     <Compile Include="nom10000.cs" />
     <Compile Include="nom10001.cs" />
     <Compile Include="nom10002.cs" />
@@ -106,6 +107,11 @@
     <Compile Include="nom10049.cs" />
     <Compile Include="nom10050.cs" />
     <Compile Include="nom10051.cs" />
+    <Compile Include="nom10052.cs" />
+    <Compile Include="nom10053.cs" />
+    <Compile Include="nom10054.cs" />
+    <Compile Include="nom10055.cs" />
+    <Compile Include="nom10056.cs" />
     <Compile Include="nom100xx.cs" />
     <Compile Include="NominasEmpresaDbContext.cs" />
     <Compile Include="nomsimul.cs" />
@@ -115,6 +121,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

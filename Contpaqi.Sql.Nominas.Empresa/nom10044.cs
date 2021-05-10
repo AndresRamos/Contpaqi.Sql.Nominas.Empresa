@@ -41,5 +41,7 @@ namespace Contpaqi.Sql.Nominas.Empresa
         public int? idDocumento { get; set; }
 
         public DateTime? timestamp { get; set; }
+
+        public bool valorReportado { get; set; }
     }
 }
